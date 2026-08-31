@@ -68,22 +68,30 @@ function Sidebar({
         aria-label="Sidebar navigation"
       >
         <div className={`border-b border-[#f1f5f9] flex h-[80px] items-center shrink-0 ${collapsed ? "px-6 md:px-3 md:justify-center lg:px-6 lg:justify-start" : "px-6"}`}>
-          <div className={`flex gap-3 items-center min-w-0 ${collapsed ? "w-full md:justify-center lg:justify-start" : ""}`}>
-            <div className="bg-[#1d4ed8] flex items-center justify-center pb-[2.5px] pt-[1.5px] rounded-[8px] size-8 shrink-0">
-              <span
-                className="text-white text-[18px] font-bold leading-[28px] tracking-[9px]"
-                style={{ fontFamily: '"Inter:Bold", sans-serif' }}
-              >
-                B
-              </span>
-            </div>
-            <span
-              className={`${labelClass} text-[#0f172a] text-[20px] leading-[28px] tracking-[-0.5px] truncate`}
-              style={{ fontFamily: '"Inter:Bold", sans-serif', fontWeight: 700 }}
-            >
-              BridgeTech
-            </span>
-          </div>
+        <div
+  className={`flex items-center min-w-0  gap-3 ${
+    collapsed ? 'w-full md:justify-center lg:justify-start' : 'gap-3'
+  }`}
+>
+  <div className="flex size-8 shrink-0 items-center justify-center rounded-[8px] bg-[#1d4ed8]">
+    <span
+      className="text-white text-[18px] font-bold leading-none"
+      style={{ fontFamily: '"Inter:Bold", sans-serif' }}
+    >
+      B
+    </span>
+  </div>
+
+  <span
+    className={`${labelClass} truncate text-[20px] leading-[28px] tracking-[-0.5px] text-[#0f172a]`}
+    style={{
+      fontFamily: '"Inter:Bold", sans-serif',
+      fontWeight: 700,
+    }}
+  >
+    BridgeTech
+  </span>
+</div>
           <button
             type="button"
             onClick={onCloseMobile}
