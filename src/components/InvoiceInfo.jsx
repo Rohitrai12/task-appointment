@@ -11,7 +11,7 @@ export default function InvoiceInfo({ invoice }) {
         className="bg-white border border-[#e2e8f0] border-solid flex flex-col items-start rounded-[12px] drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] w-full"
         data-name="InvoiceCard"
       >
-        <div className="border-b border-[#f1f5f9] flex items-center justify-between gap-3 p-4 sm:p-6 w-full">
+        <div className="border-b border-[#f1f5f9] flex items-center justify-between  gap-3 p-4 sm:p-6 w-full">
           <h2
             id="invoice-summary-heading"
             className="text-[#0f172a] text-[16px] leading-[24px]"

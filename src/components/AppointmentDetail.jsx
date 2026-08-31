@@ -68,30 +68,29 @@ function Sidebar({
         aria-label="Sidebar navigation"
       >
         <div className={`border-b border-[#f1f5f9] flex h-[80px] items-center shrink-0 ${collapsed ? "px-6 md:px-3 md:justify-center lg:px-6 lg:justify-start" : "px-6"}`}>
-        <div
-  className={`flex items-center min-w-0  gap-3 ${
-    collapsed ? 'w-full md:justify-center lg:justify-start' : 'gap-3'
-  }`}
->
-  <div className="flex size-8 shrink-0 items-center justify-center rounded-[8px] bg-[#1d4ed8]">
-    <span
-      className="text-white text-[18px] font-bold leading-none"
-      style={{ fontFamily: '"Inter:Bold", sans-serif' }}
-    >
-      B
-    </span>
-  </div>
+          <div
+            className={`flex items-center min-w-0  gap-3 ${collapsed ? 'w-full md:justify-center lg:justify-start' : 'gap-3'
+              }`}
+          >
+            <div className="flex size-8 shrink-0 items-center justify-center rounded-[8px] bg-[#1d4ed8]">
+              <span
+                className="text-white text-[18px] font-bold leading-none"
+                style={{ fontFamily: '"Inter:Bold", sans-serif' }}
+              >
+                B
+              </span>
+            </div>
 
-  <span
-    className={`${labelClass} truncate text-[20px] leading-[28px] tracking-[-0.5px] text-[#0f172a]`}
-    style={{
-      fontFamily: '"Inter:Bold", sans-serif',
-      fontWeight: 700,
-    }}
-  >
-    BridgeTech
-  </span>
-</div>
+            <span
+              className={`${labelClass} truncate text-[20px] leading-[28px] tracking-[-0.5px] text-[#0f172a]`}
+              style={{
+                fontFamily: '"Inter:Bold", sans-serif',
+                fontWeight: 700,
+              }}
+            >
+              BridgeTech
+            </span>
+          </div>
           <button
             type="button"
             onClick={onCloseMobile}
@@ -117,13 +116,11 @@ function Sidebar({
               aria-current={active ? "page" : undefined}
               aria-label={label}
               title={label}
-              className={`flex gap-3 items-center min-h-[44px] ${
-                collapsed ? "px-3 justify-start md:justify-center md:px-0 lg:justify-start lg:px-3" : "px-3"
-              } ${
-                active
+              className={`flex gap-3 items-center min-h-[44px] ${collapsed ? "px-3 justify-start md:justify-center md:px-0 lg:justify-start lg:px-3" : "px-3"
+                } ${active
                   ? "bg-[#eff6ff] text-[#1d4ed8]"
                   : "text-[#475569] hover:bg-[#f8fafc] hover:text-[#334155]"
-              } py-[10px] rounded-[8px] w-full cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2563eb]`}
+                } py-[10px] rounded-[8px] w-full cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2563eb]`}
             >
               <span
                 className="text-[16px] leading-[16px] w-5 shrink-0 text-center"

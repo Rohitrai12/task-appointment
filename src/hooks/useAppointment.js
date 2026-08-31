@@ -28,8 +28,8 @@ export function useAppointment(appointmentId) {
         setInvoice(null);
         setError(
           err.response?.data?.message ||
-            err.message ||
-            "Failed to load appointment",
+          err.message ||
+          "Failed to load appointment",
         );
         setResolvedKey(fetchKey);
       });

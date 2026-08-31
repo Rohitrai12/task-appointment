@@ -89,12 +89,12 @@ function ok(config, data, status = 200) {
 function rejectError(config, { status, code, message, details }) {
   const response = status
     ? {
-        status,
-        statusText: message,
-        data: { message, details },
-        headers: {},
-        config,
-      }
+      status,
+      statusText: message,
+      data: { message, details },
+      headers: {},
+      config,
+    }
     : undefined;
 
   return Promise.reject(
